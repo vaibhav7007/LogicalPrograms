@@ -8,7 +8,7 @@ namespace LogicalPrograms
         {
             Console.WriteLine("Welcome to the logical programs");
             Console.WriteLine("Choose option from below");
-            Console.WriteLine("1.FibbonacciSeries\n2.Perfect Number");
+            Console.WriteLine("1.FibbonacciSeries\n2.Perfect Number\n3.Prime Number");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -18,6 +18,10 @@ namespace LogicalPrograms
 
                 case 2:
                     perfectNumber.Number();
+                    break;
+
+                case 3:
+                    PrimeNumber.CheckNum();
                     break;
             }
          }

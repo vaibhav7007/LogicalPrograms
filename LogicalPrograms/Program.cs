@@ -8,7 +8,7 @@ namespace LogicalPrograms
         {
             Console.WriteLine("Welcome to the logical programs");
             Console.WriteLine("Choose option from below");
-            Console.WriteLine("1.FibbonacciSeries\n2.Perfect Number\n3.Prime Number\n4.Reverse Number\n7.Vending Machine\n8.Day Of Week\n9.Temperature Conversion\n10.Monthly Payment");
+            Console.WriteLine("1.FibbonacciSeries\n2.Perfect Number\n3.Prime Number\n4.Reverse Number\n7.Vending Machine\n8.Day Of Week\n9.Temperature Conversion\n10.Monthly Payment\n11.Square Root");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -43,6 +43,10 @@ namespace LogicalPrograms
 
                 case 10:
                     MonthlyPayment.payments();
+                    break;
+
+                case 11:
+                    SquareRoot.sqrt();
                     break;
             }
          }

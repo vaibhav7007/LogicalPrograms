@@ -8,7 +8,7 @@ namespace LogicalPrograms
         {
             Console.WriteLine("Welcome to the logical programs");
             Console.WriteLine("Choose option from below");
-            Console.WriteLine("1.FibbonacciSeries\n2.Perfect Number\n3.Prime Number\n4.Reverse Number\n7.Vending Machine\n8.Day Of Week");
+            Console.WriteLine("1.FibbonacciSeries\n2.Perfect Number\n3.Prime Number\n4.Reverse Number\n7.Vending Machine\n8.Day Of Week\n9.Temperature Conversion");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -34,6 +34,11 @@ namespace LogicalPrograms
 
                 case 8:
                     DayOfWeek.Week();
+                    break;
+
+                case 9:
+                    TemperatureConversion.tempCelsiusToFarheneit();
+                    TemperatureConversion.tempFarheneitToCelsius();
                     break;
             }
          }
